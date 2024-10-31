@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gerador de Efeitos CSS - Border Radius, Sombra e Cor</title>
+    <meta
+      name="description"
+      content="Crie e visualize efeitos CSS em tempo real, incluindo border-radius, box-shadow e cor de fundo. Ferramenta fácil de usar para desenvolvedores web."
+    />
+    <meta
+      name="keywords"
+      content="border-radius, box-shadow, efeitos CSS, gerador de CSS, design web, ferramenta CSS"
+    />
+    <meta name="author" content="Seu Nome" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="icon" href="images/favicon.png" type="image/x-icon" />
+  </head>
+  <body>
+    <header>
+      <h1>Gerador de Efeitos CSS</h1>
+      <p>Ajuste os efeitos do quadrado abaixo usando as opções disponíveis.</p>
+    </header>
+
+    <main>
+      <div class="container">
+        <div
+          class="quadrado"
+          id="preview-box"
+          aria-label="Quadrado em visualização"
+        ></div>
+        <label for="radius-input"
+          >Border-Radius: <span id="radius-value">0px</span></label
+        >
+        <input
+          type="range"
+          id="radius-input"
+          min="0"
+          max="100"
+          value="0"
+          aria-labelledby="radius-input"
+        />
+
+        <label for="shadow-input">Box Shadow:</label>
+        <input
+          type="range"
+          id="shadow-input"
+          min="0"
+          max="50"
+          value="0"
+          aria-labelledby="shadow-input"
+        />
+
+        <label for="color-input">Cor de Fundo:</label>
+        <input
+          type="color"
+          id="color-input"
+          value="#007bff"
+          aria-labelledby="color-input"
+        />
+      </div>
+    </main>
+
+    <footer>
+      <p>© 2024 Fernando Terra. Todos os direitos reservados.</p>
+      <nav>
+        <ul>
+          <li>
+            <a href="https://www.facebook.com/profile.php?id=61568150722224"
+              >Contato</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

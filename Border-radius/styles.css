@@ -1,3 +1,7 @@
+* {
+  overflow: hidden;
+}
+
 body {
   font-family: Arial, sans-serif;
   margin: 0;
@@ -10,6 +14,15 @@ body {
   height: 100vh; /* Altura total da tela */
 }
 
+li {
+  padding: 10px;
+}
+
+ul {
+  justify-content: center;
+  display: flex;
+}
+
 header {
   text-align: center;
   margin-bottom: 20px;
@@ -19,6 +32,8 @@ header {
   display: flex;
   flex-direction: column;
   align-items: center;
+  max-width: 400px; /* Limite de largura para a container */
+  width: 100%; /* Largura total até o limite */
 }
 
 .quadrado {
@@ -39,4 +54,5 @@ input[type="range"],
 input[type="color"] {
   margin-bottom: 10px; /* Espaço abaixo dos sliders e do seletor de cor */
   width: 100%; /* Largura do slider e do seletor de cor */
+  max-width: 100%; /* Para garantir que não exceda o limite da container */
 }

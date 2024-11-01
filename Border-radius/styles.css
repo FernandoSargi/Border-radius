@@ -13,9 +13,17 @@ body {
   justify-content: center;
   height: 100vh; /* Altura total da tela */
 }
+.anuncio-fixo {
+  position: fixed;
+  top: 20px;
+  right: 10px;
+  width: 300px;
+  z-index: 10;
+}
 
 li {
   padding: 10px;
+  list-style: none;
 }
 
 ul {

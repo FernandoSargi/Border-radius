@@ -35,23 +35,32 @@
     <meta property="og:image" content="images/preview.png" />
     <meta property="og:url" content="https://seusite.com" />
     <meta property="og:type" content="website" />
+
+    <!-- Estilos adicionais para o anúncio fixo -->
+    <style>
+      .anuncio-fixo {
+        position: fixed;
+        top: 10px;
+        right: 10px;
+        width: 300px; /* Ajuste a largura conforme necessário */
+        z-index: 1000;
+      }
+    </style>
   </head>
   <body>
     <!-- Anúncio fixo à direita -->
     <div class="anuncio-fixo">
-      <script
-        async
-        src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"
-      ></script>
-      <ins
-        class="adsbygoogle"
-        style="display: block"
-        data-ad-client="ca-pub-3282826002273378"
-        data-ad-slot="1234567890"
-        data-ad-format="auto"
-      ></ins>
-      <script>
-        (adsbygoogle = window.adsbygoogle || []).push({});
+      <script type="text/javascript">
+        var uid = "449271";
+        var wid = "729443";
+        var pop_tag = document.createElement("script");
+        pop_tag.src = "//cdn.popcash.net/show.js";
+        document.body.appendChild(pop_tag);
+        pop_tag.onerror = function () {
+          pop_tag = document.createElement("script");
+          pop_tag.src = "//cdn2.popcash.net/show.js";
+          document.body.appendChild(pop_tag);
+        };
       </script>
     </div>
 
@@ -133,11 +142,5 @@
 
     <!-- Script principal do site -->
     <script src="script.js" defer></script>
-
-    <script
-      defer
-      src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3282826002273378"
-      crossorigin="anonymous"
-    ></script>
   </body>
 </html>

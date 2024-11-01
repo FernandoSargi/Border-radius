@@ -13,6 +13,7 @@ body {
   justify-content: center;
   height: 100vh; /* Altura total da tela */
 }
+
 .anuncio-fixo {
   position: fixed;
   top: 20px;
@@ -27,8 +28,8 @@ li {
 }
 
 ul {
-  justify-content: center;
   display: flex;
+  justify-content: center;
 }
 
 header {
@@ -41,26 +42,26 @@ header {
   flex-direction: column;
   align-items: center;
   max-width: 400px; /* Limite de largura para a container */
-  width: 100%; /* Largura total até o limite */
+  width: 100%;
 }
 
 .quadrado {
-  width: 200px; /* Largura do quadrado */
-  height: 200px; /* Altura do quadrado */
-  background-color: #007bff; /* Cor do quadrado */
-  border-radius: 0; /* Começa com bordas retas */
-  margin-bottom: 20px; /* Espaço abaixo do quadrado */
-  transition: all 0.3s ease; /* Transição suave para todos os efeitos */
-  box-shadow: 0 0 0 rgba(0, 0, 0, 0); /* Inicia sem sombra */
+  width: 200px;
+  height: 200px;
+  background-color: #007bff;
+  border-radius: 0;
+  margin-bottom: 20px;
+  transition: all 0.3s ease;
+  box-shadow: 0 0 0 rgba(0, 0, 0, 0);
 }
 
 label {
-  margin: 10px 0 5px; /* Espaço para as labels */
+  margin: 10px 0 5px;
 }
 
 input[type="range"],
 input[type="color"] {
-  margin-bottom: 10px; /* Espaço abaixo dos sliders e do seletor de cor */
-  width: 100%; /* Largura do slider e do seletor de cor */
-  max-width: 100%; /* Para garantir que não exceda o limite da container */
+  margin-bottom: 10px;
+  width: 100%;
+  max-width: 100%;
 }

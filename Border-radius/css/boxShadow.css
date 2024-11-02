@@ -126,14 +126,14 @@ p {
     flex-direction: column;
     justify-content: center;
   }
-  .text-preview {
-    width: 100%;
-  }
-
   head {
     display: none;
   }
   script {
+    display: none;
+  }
+  #m,
+  #g {
     display: none;
   }
 }

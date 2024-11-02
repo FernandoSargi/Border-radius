@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Gerador de efeitos CSS para personalização de tamanho de fonte e muito mais."
+    />
+    <meta
+      name="keywords"
+      content="CSS, tamanho da fonte, design web, efeitos CSS"
+    />
+    <meta name="google-adsense-account" content="ca-pub-3282826002273378" />
+    <title>Gerador de Efeitos CSS - Tamanho da Fonte</title>
+    <link rel="stylesheet" href="/css/textSize.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Gerador de Efeitos CSS</h1>
+      <nav class="section-container">
+        <h2>Seções</h2>
+        <div class="sidebar">
+          <ul>
+            <li><a href="/index.html">Home</a></li>
+            <li><a href="/pages/boxShadow.html">Box-Shadow</a></li>
+            <li><a href="/pages/transform.html">Transform</a></li>
+            <li><a href="/pages/gradient.html">Gradient</a></li>
+            <li><a href="/pages/cursor.html">CSS-Cursor</a></li>
+            <li><a href="/pages/border-radius.html">Border-Radius</a></li>
+            <li><a href="/pages/filter.html">Filter</a></li>
+            <li><a href="/pages/border.html">Border</a></li>
+            <li><a href="/pages/rgba.html">RGBA & Hex Color</a></li>
+            <li><a href="/pages/columns.html">Multiple Columns</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <div class="text-size-container">
+        <input type="text" id="text-input" placeholder="Digite o texto aqui" />
+        <div class="slider-container">
+          <label for="font-size-slider">Tamanho da Fonte:</label>
+          <input
+            type="range"
+            id="font-size-slider"
+            min="10"
+            max="100"
+            value="16"
+          />
+          <span id="font-size-value">16px</span>
+        </div>
+        <p id="text-display" style="font-size: 16px">Texto de exemplo</p>
+        <p class="text-description">
+          Ajuste o
+          <a
+            href="https://developer.mozilla.org/en-US/docs/Web/CSS/font-size"
+            target="_blank"
+            rel="noopener noreferrer"
+            >tamanho da fonte</a
+          >
+          usando o controle deslizante ou digitando o texto no campo acima. O
+          texto de exemplo à direita se ajustará ao tamanho da fonte
+          selecionado.
+        </p>
+      </div>
+    </main>
+
+    <script src="/script/TextSize.js"></script>
+  </body>
+</html>

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Gerador de efeitos CSS para filtros de imagem. Ajuste saturação, brilho e contraste com facilidade."
+    />
+    <meta name="google-adsense-account" content="ca-pub-3282826002273378" />
+    <meta name="keywords" content="CSS, filtros, efeitos CSS, design web" />
+    <title>Gerador de Efeitos CSS - Filtros de Imagem</title>
+    <link rel="stylesheet" href="/css/filter.css" />
+    <link rel="icon" href="images/favicon.png" type="image/x-icon" />
+  </head>
+  <body>
+    <header>
+      <h1>Gerador de Efeitos CSS</h1>
+      <nav class="section-container">
+        <h2>Seções</h2>
+        <div class="sidebar">
+          <ul>
+            <li><a href="/index.html">Home</a></li>
+            <li><a href="/pages/boxShadow.html">Box-Shadow</a></li>
+            <li><a href="/pages/text-size.html">Text-Size</a></li>
+            <li><a href="/pages/gradient.html">Gradient</a></li>
+            <li><a href="/pages/gradient.html">Gradient</a></li>
+            <li><a href="/pages/cursor.html">CSS-Cursor</a></li>
+            <li><a href="/pages/border-radius.html">Border-Radius</a></li>
+            <li><a href="/pages/transform.html">Transform</a></li>
+            <li><a href="/pages/border.html">Border</a></li>
+            <li><a href="/pages/rgba.html">RGBA & Hex Color</a></li>
+            <li><a href="/pages/columns.html">Multiple Columns</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <div class="filter-container">
+        <!-- Painel de Controle -->
+        <div class="control-panel">
+          <h2>Filtros de Imagem</h2>
+
+          <label for="brightness">Brilho:</label>
+          <input type="range" id="brightness" min="0" max="200" value="100" />
+
+          <label for="contrast">Contraste:</label>
+          <input type="range" id="contrast" min="0" max="200" value="100" />
+
+          <label for="saturate">Saturação:</label>
+          <input type="range" id="saturate" min="0" max="200" value="100" />
+
+          <label for="grayscale">Tons de Cinza:</label>
+          <input type="range" id="grayscale" min="0" max="100" value="0" />
+
+          <label for="sepia">Sépia:</label>
+          <input type="range" id="sepia" min="0" max="100" value="0" />
+
+          <button id="resetButton">Resetar Filtros</button>
+        </div>
+
+        <!-- Imagem com Filtros -->
+        <div class="image-container">
+          <img
+            src="/images/vizag-explore-icopw1LA668-unsplash.jpg"
+            alt="Imagem para aplicar filtros"
+            id="image"
+          />
+        </div>
+      </div>
+      <p class="filter-description">
+        Ajuste os controles acima para modificar a aparência da
+        <a
+          href="https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/Array/filter"
+          target="_blank"
+          rel="noopener noreferrer"
+          >imagem</a
+        >. Use o brilho para iluminar ou escurecer, o contraste para realçar
+        diferenças de cor, e a saturação para intensificar ou desbotar as cores.
+        Os filtros de tons de cinza e sépia podem ser usados para criar efeitos
+        vintage.
+      </p>
+    </main>
+
+    <script src="/script/Filter.js"></script>
+  </body>
+</html>

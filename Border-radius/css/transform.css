@@ -148,4 +148,8 @@ h2 {
   script {
     display: none;
   }
+  #m,
+  #g {
+    display: none;
+  }
 }

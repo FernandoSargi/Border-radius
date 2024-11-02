@@ -55,3 +55,67 @@ main {
   border-radius: 8px; /* Bordas arredondadas do parágrafo */
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
 }
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  padding: 20px;
+  background-color: #f9f9f9;
+  font-family: Arial, sans-serif;
+}
+
+header a {
+  text-decoration: none;
+  list-style: none;
+  color: white;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+nav ul {
+  display: flex;
+  flex-wrap: wrap; /* Permite quebrar linha quando necessário */
+  justify-content: center; /* Centraliza os links */
+  padding: 0;
+  list-style: none; /* Remove os marcadores de lista */
+}
+
+nav ul li {
+  margin: 10px; /* Espaçamento entre os links */
+  padding: 20px; /* Tamanho dos quadrados */
+  background-color: #007bff; /* Cor de fundo */
+  color: white; /* Cor do texto */
+  border-radius: 10px; /* Bordas arredondadas */
+  transition: background-color 0.3s, transform 0.3s; /* Transição suave para hover */
+  cursor: pointer; /* Aponta que é clicável */
+  text-align: center; /* Centraliza o texto dentro do quadrado */
+  width: calc(25% - 20px); /* Largura responsiva dos quadrados */
+}
+
+nav ul li:hover {
+  background-color: #0056b3; /* Cor ao passar o mouse */
+  transform: scale(1.05); /* Aumenta levemente o quadrado ao passar o mouse */
+}
+
+main {
+  width: 80%; /* Largura do parágrafo em relação ao contêiner */
+  max-width: 800px; /* Largura máxima do parágrafo */
+  text-align: center; /* Centraliza o texto */
+  margin-top: 20px; /* Espaço acima do parágrafo */
+  padding: 20px; /* Espaçamento interno do parágrafo */
+  background-color: #fff; /* Cor de fundo do parágrafo */
+  border-radius: 8px; /* Bordas arredondadas do parágrafo */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+@media screen and (min-width: 100px) and (max-width: 800px) {
+  #m,
+  #g {
+    display: none;
+  }
+}

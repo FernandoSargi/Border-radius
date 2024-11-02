@@ -144,15 +144,21 @@ input[type="range"] {
     border: 1px solid #ccc; /* Borda para visualização */
   }
 
-  @media screen and (max-width: 800px) {
-    .text-preview {
-      flex-direction: column; /* Colunas se empilham em dispositivos móveis */
-      gap: 10px; /* Espaçamento reduzido */
+  @media screen and (min-width: 100px) and (max-width: 800px) {
+    * {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
     }
-
-    head,
+    head {
+      display: none;
+    }
     script {
-      display: none; /* Não exibir cabeçalho e scripts no mobile */
+      display: none;
+    }
+    #m,
+    #g {
+      display: none;
     }
   }
 }

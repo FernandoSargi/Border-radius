@@ -197,4 +197,8 @@ input[type="color"] {
   script {
     display: none;
   }
+  #m,
+  #g {
+    display: none;
+  }
 }

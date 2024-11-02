@@ -144,4 +144,8 @@ body {
   script {
     display: none;
   }
+  #m,
+  #g {
+    display: none;
+  }
 }

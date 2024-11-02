@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
   <head>
-    <meta name="ppck-ver" content="1dd43c3c1e9b7867ed1cc2c2edeacb76" />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Gerador de Efeitos CSS - Border Radius, Sombra e Cor</title>
@@ -13,9 +12,10 @@
       name="keywords"
       content="border-radius, box-shadow, efeitos CSS, gerador de CSS, design web, ferramenta CSS"
     />
+    <meta name="google-adsense-account" content="ca-pub-3282826002273378" />
     <meta name="author" content="Fernando Terra" />
-    <link rel="stylesheet" href="styles.css" />
-    <link rel="icon" href="images/favicon.png" type="image/x-icon" />
+    <link rel="stylesheet" href="/css/index.css" />
+    <link rel="icon" href="images/favicon.png" type="image/x-icon" rel="icon" />
 
     <!-- Google Site Verification -->
     <meta
@@ -35,112 +35,36 @@
     <meta property="og:image" content="images/preview.png" />
     <meta property="og:url" content="https://seusite.com" />
     <meta property="og:type" content="website" />
-
-    <!-- Estilos adicionais para o anúncio fixo -->
-    <style>
-      .anuncio-fixo {
-        position: fixed;
-        top: 10px;
-        right: 10px;
-        width: 300px; /* Ajuste a largura conforme necessário */
-        z-index: 1000;
-      }
-    </style>
   </head>
   <body>
-    <!-- Anúncio fixo à direita -->
-    <div class="anuncio-fixo">
-      <script type="text/javascript">
-        var uid = "449271";
-        var wid = "729443";
-        var pop_tag = document.createElement("script");
-        pop_tag.src = "//cdn.popcash.net/show.js";
-        document.body.appendChild(pop_tag);
-        pop_tag.onerror = function () {
-          pop_tag = document.createElement("script");
-          pop_tag.src = "//cdn2.popcash.net/show.js";
-          document.body.appendChild(pop_tag);
-        };
-      </script>
-    </div>
-
     <header>
       <h1>Gerador de Efeitos CSS</h1>
-      <p>Ajuste os efeitos do quadrado abaixo usando as opções disponíveis.</p>
+      <nav>
+        <ul>
+          <li><a href="/pages/border-radius.html">border-radius</a></li>
+          <li><a href="/pages/boxShadow.html">Box-Shadow</a></li>
+          <li><a href="/pages/text-size.html">Text-Size</a></li>
+          <li><a href="/pages/gradient.html">Gradient</a></li>
+          <li><a href="/pages/cursor.html">CSS-Cursor</a></li>
+          <li><a href="/pages/transform.html">Transform</a></li>
+          <li><a href="/pages/filter.html">Filter</a></li>
+          <li><a href="/pages/border.html">Border</a></li>
+          <li><a href="/pages/rgba.html">RGBA & Hex Color</a></li>
+          <li><a href="/pages/columns.html">Multiple Columns</a></li>
+        </ul>
+      </nav>
     </header>
 
     <main>
-      <div class="container">
-        <div
-          class="quadrado"
-          id="preview-box"
-          aria-label="Quadrado em visualização"
-        ></div>
-        <label for="radius-input">
-          Border-Radius: <span id="radius-value">0px</span>
-        </label>
-        <input
-          type="range"
-          id="radius-input"
-          min="0"
-          max="100"
-          value="0"
-          aria-labelledby="radius-input"
-        />
-
-        <label for="shadow-input">Box Shadow:</label>
-        <input
-          type="range"
-          id="shadow-input"
-          min="0"
-          max="50"
-          value="0"
-          aria-labelledby="shadow-input"
-        />
-
-        <label for="color-input">Cor de Fundo:</label>
-        <input
-          type="color"
-          id="color-input"
-          value="#007bff"
-          aria-labelledby="color-input"
-        />
-      </div>
+      <p>
+        O Gerador de Efeitos CSS é uma ferramenta projetada para ajudar
+        desenvolvedores web a criar e visualizar efeitos CSS em tempo real. Com
+        ele, você pode experimentar com propriedades como border-radius,
+        box-shadow e gradientes, facilitando a criação de designs atraentes e
+        modernos para suas páginas web. A ideia é simplificar o processo de
+        desenvolvimento e proporcionar uma experiência interativa, permitindo
+        que você veja instantaneamente as alterações que faz nos estilos.
+      </p>
     </main>
-
-    <footer>
-      <p>© 2024 Fernando Terra. Todos os direitos reservados.</p>
-      <nav>
-        <ul>
-          <li>
-            <a
-              href="https://www.facebook.com/profile.php?id=61568150722224"
-              target="_blank"
-              rel="noopener noreferrer"
-              >Contato</a
-            >
-          </li>
-          <li>
-            <a
-              href="https://developer.mozilla.org/en-US/docs/Web/CSS/border-radius"
-              target="_blank"
-              rel="noopener noreferrer"
-              >Border-Radius</a
-            >
-          </li>
-          <li>
-            <a
-              href="https://developer.mozilla.org/en-US/docs/Web/CSS/box-shadow"
-              target="_blank"
-              rel="noopener noreferrer"
-              >Box-Shadow</a
-            >
-          </li>
-        </ul>
-      </nav>
-    </footer>
-
-    <!-- Script principal do site -->
-    <script src="script.js" defer></script>
   </body>
 </html>

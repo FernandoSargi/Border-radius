@@ -1,0 +1,184 @@
+/* CSS existente... */
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  padding: 20px;
+  background-color: #f9f9f9;
+  font-family: Arial, sans-serif;
+}
+
+.main-container {
+  display: flex; /* Alinha os filhos na horizontal */
+  justify-content: space-between; /* Espaçamento entre os itens */
+  align-items: flex-start; /* Alinha os itens ao topo */
+  width: 100%; /* Ocupa 100% da largura */
+  max-width: 1200px; /* Largura máxima */
+}
+
+.square-container {
+  display: flex; /* Usando flex para alinhar elementos */
+  align-items: center; /* Centraliza verticalmente */
+}
+
+.square-container .quadrado {
+  margin-right: 20px; /* Espaço entre o quadrado e o parágrafo */
+}
+
+main p {
+  width: 300px; /* Largura do parágrafo */
+  font-size: 14px; /* Tamanho da fonte */
+  line-height: 1.5; /* Altura da linha */
+  text-align: left; /* Alinha o texto à esquerda */
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  background-color: #f9f9f9;
+}
+
+header {
+  text-align: center;
+  padding: 20px;
+}
+
+.sidebar {
+  background-color: #e2e2e2;
+  padding: 15px;
+  margin: 20px auto;
+  width: 100%;
+  max-width: 600px;
+  overflow-x: auto;
+}
+
+.sidebar h2 {
+  text-align: center;
+}
+
+.sidebar ul {
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.sidebar li {
+  margin: 5px;
+}
+
+.sidebar a {
+  text-decoration: none;
+  color: #333;
+  display: block;
+  padding: 10px;
+  border-radius: 5px;
+  min-width: 120px;
+  text-align: center;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.sidebar a:hover {
+  background-color: #007bff;
+  color: white;
+}
+
+.main-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+}
+
+.control-panel {
+  width: 200px;
+}
+
+.square-container {
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+}
+
+.quadrado {
+  width: 200px;
+  height: 200px;
+  background-color: #007bff;
+  transition: border-radius 0.3s ease;
+}
+
+.radius-controls {
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+}
+
+.radius-controls input[type="range"] {
+  width: 100%;
+  margin: 5px 0;
+}
+
+button {
+  margin-top: 10px;
+  padding: 5px 10px;
+  border: none;
+  background-color: #007bff;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+#infoText {
+  margin-top: 20px;
+}
+
+p {
+  margin-top: 15px;
+  font-size: 14px;
+  color: #555;
+  max-width: 600px; /* Limite a largura do texto para melhor legibilidade */
+  text-align: left;
+}
+
+.sidebar a.active {
+  color: white;
+  background-color: #007bff;
+  font-weight: bold; /* Muda o peso da fonte para destacar */
+}
+
+@media screen and (min-width: 100px) and (max-width: 800px) {
+  * {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  head {
+    display: none;
+  }
+  script {
+    display: none;
+  }
+  #m,
+  #c {
+    display: none;
+  }
+}

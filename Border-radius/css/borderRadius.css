@@ -160,11 +160,12 @@ p {
 }
 
 .sidebar a.active {
-  border: 2px solid #ff5722;
-  color: white;
-  background-color: #007bff;
-  font-weight: bold; /* Muda o peso da fonte para destacar */
+  border: 3px solid #ff5722; /* Espessura aumentada */
+  color: white; /* Cor do texto */
+  background-color: #0056b3; /* Azul mais escuro para melhor contraste */
+  font-weight: bold; /* Destaca o texto */
 }
+
 
 @media screen and (min-width: 100px) and (max-width: 800px) {
   * {

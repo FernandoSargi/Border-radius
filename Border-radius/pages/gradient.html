@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Gerador de efeitos CSS com gradientes." />
+    <meta name="keywords" content="CSS, gradientes, design web, efeitos CSS" />
+    <title>Gerador de Efeitos CSS - Gradient</title>
+    <link rel="stylesheet" href="/css/gradient.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Gerador de Efeitos CSS</h1>
+      <nav class="section-container">
+        <h2>Seções</h2>
+        <div class="sidebar">
+          <ul>
+            <li><a href="/index.html" class="nav-item">Home</a></li>
+            <li><a href="/pages/border-radius.html">Border-Radius</a></li>
+            <li>
+              <a href="/pages/boxShadow.html" class="nav-item">Box-Shadow</a>
+            </li>
+            <li>
+              <a href="/pages/text-size.html" class="nav-item">Text-Size</a>
+            </li>
+            <li>
+              <a href="/pages/gradient.html" class="nav-item">Gradient</a>
+            </li>
+            <li id="c">
+              <a href="/pages/cursor.html" class="nav-item">CSS-Cursor</a>
+            </li>
+            <li>
+              <a href="/pages/transform.html" class="nav-item">Transform</a>
+            </li>
+            <li><a href="/pages/filter.html" class="nav-item">Filter</a></li>
+            <li><a href="/pages/border.html" class="nav-item">Border</a></li>
+            <li>
+              <a href="/pages/rgba.html" class="nav-item">RGBA & Hex Color</a>
+            </li>
+            <li id="m">
+              <a href="/pages/columns.html" class="nav-item"
+                >Multiple Columns</a
+              >
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <div class="gradient-container">
+        <div class="input-container">
+          <label for="color-picker1">Escolha a primeira cor:</label>
+          <input type="color" id="color-picker1" />
+          <label for="color-picker2">Escolha a segunda cor:</label>
+          <input type="color" id="color-picker2" />
+
+          <label for="gradient-type">Tipo de Gradiente:</label>
+          <select id="gradient-type">
+            <option value="linear">Linear</option>
+            <option value="radial">Radial</option>
+          </select>
+
+          <label for="angle-slider">Ângulo:</label>
+          <input type="range" id="angle-slider" min="0" max="360" value="90" />
+          <span id="angle-value">90°</span>
+        </div>
+
+        <div class="gradient-square" id="gradient-square"></div>
+      </div>
+    </main>
+    <p class="gradient-description">
+      Selecione duas cores e ajuste o tipo e o ângulo do gradiente para
+      visualizar e copiar o CSS correspondente.
+    </p>
+    <button id="copy-gradient">Copiar CSS</button>
+
+    <script src="/script/Gradient.js" defer></script>
+  </body>
+</html>

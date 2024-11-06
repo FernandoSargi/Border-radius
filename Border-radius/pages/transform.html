@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Gerador de efeitos CSS - Transform" />
+    <meta name="keywords" content="CSS, transform, efeitos CSS, design web" />
+    <meta name="google-adsense-account" content="ca-pub-3282826002273378" />
+    <title>Gerador de Efeitos CSS - Transform</title>
+    <link rel="stylesheet" href="/css/transform.css" />
+    <link rel="icon" href="images/favicon.png" type="image/x-icon" />
+  </head>
+  <body>
+    <header>
+      <h1>Gerador de Efeitos CSS</h1>
+      <nav class="section-container">
+        <h2>Seções</h2>
+        <div class="sidebar">
+          <ul>
+            <li><a href="/index.html" class="nav-item">Home</a></li>
+            <li><a href="/pages/border-radius.html">Border-Radius</a></li>
+            <li>
+              <a href="/pages/boxShadow.html" class="nav-item">Box-Shadow</a>
+            </li>
+            <li>
+              <a href="/pages/text-size.html" class="nav-item">Text-Size</a>
+            </li>
+            <li>
+              <a href="/pages/gradient.html" class="nav-item">Gradient</a>
+            </li>
+            <li id="c">
+              <a href="/pages/cursor.html" class="nav-item">CSS-Cursor</a>
+            </li>
+            <li>
+              <a href="/pages/transform.html" class="nav-item">Transform</a>
+            </li>
+            <li><a href="/pages/filter.html" class="nav-item">Filter</a></li>
+            <li><a href="/pages/border.html" class="nav-item">Border</a></li>
+            <li>
+              <a href="/pages/rgba.html" class="nav-item">RGBA & Hex Color</a>
+            </li>
+            <li id="m">
+              <a href="/pages/columns.html" class="nav-item"
+                >Multiple Columns</a
+              >
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <h2>Transformações 3D</h2>
+      <div class="transform-container">
+        <div class="transform-box" id="transform-box"></div>
+        <div class="input-container">
+          <label for="rotateX">Rotação no eixo X:</label>
+          <input type="range" id="rotateX" min="-180" max="180" value="0" />
+          <span id="rotateXValue">0°</span>
+
+          <label for="rotateY">Rotação no eixo Y:</label>
+          <input type="range" id="rotateY" min="-180" max="180" value="0" />
+          <span id="rotateYValue">0°</span>
+
+          <button id="resetButton">Resetar</button>
+          <p class="transform-description">
+            Ajuste os controles acima para aplicar rotações no eixo X e Y ao
+            quadrado de
+            <a
+              href="https://developer.mozilla.org/pt-BR/docs/Web/CSS/transform"
+              target="_blank"
+              >transformação</a
+            >. Os valores vão de -180° a 180°, permitindo uma visualização
+            completa da transformação 3D.
+          </p>
+        </div>
+      </div>
+
+      <div class="output">
+        <span id="cssOutput">transform: rotateX(0deg) rotateY(0deg);</span>
+        <button id="copyButton">Copiar CSS</button>
+      </div>
+
+      <!-- Exemplo de Propriedades de Transform -->
+      <div class="examples-box">
+        <h3>Exemplos de Propriedades CSS - Transform</h3>
+        <p>
+          <strong>rotateX(angulo)</strong> - Rotaciona o elemento no eixo X. O
+          ângulo pode ser positivo ou negativo.
+        </p>
+        <pre>transform: rotateX(45deg);</pre>
+
+        <p>
+          <strong>rotateY(angulo)</strong> - Rotaciona o elemento no eixo Y. O
+          ângulo pode ser positivo ou negativo.
+        </p>
+        <pre>transform: rotateY(30deg);</pre>
+
+        <p>
+          <strong>scale(fator)</strong> - Altera o tamanho do elemento. Fatores
+          maiores que 1 aumentam o tamanho, e menores que 1 diminuem.
+        </p>
+        <pre>transform: scale(1.5);</pre>
+
+        <p>
+          <strong>translateX(distância)</strong> - Move o elemento
+          horizontalmente. A distância pode ser em pixels ou outras unidades.
+        </p>
+        <pre>transform: translateX(50px);</pre>
+
+        <p>
+          <strong>translateY(distância)</strong> - Move o elemento
+          verticalmente.
+        </p>
+        <pre>transform: translateY(-20px);</pre>
+
+        <p>
+          <strong>skewX(angulo)</strong> - Inclina o elemento no eixo X. O
+          ângulo pode ser positivo ou negativo.
+        </p>
+        <pre>transform: skewX(15deg);</pre>
+
+        <p><strong>skewY(angulo)</strong> - Inclina o elemento no eixo Y.</p>
+        <pre>transform: skewY(25deg);</pre>
+
+        <p>
+          <strong>matrix(a, b, c, d, e, f)</strong> - Aplica uma transformação
+          2D combinada usando uma matriz.
+        </p>
+        <pre>transform: matrix(1, 0, 0, 1, 0, 0);</pre>
+      </div>
+    </main>
+
+    <script src="/script/Transform.js"></script>
+  </body>
+</html>

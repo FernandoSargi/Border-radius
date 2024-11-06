@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gerador de Efeitos CSS - Border Radius, Sombra e Cor</title>
+    <meta
+      name="description"
+      content="Ferramenta inovadora para desenvolvedores criarem e visualizarem efeitos CSS, como border-radius e sombras. Acesse e explore o poder do design CSS."
+    />
+    <meta
+      name="keywords"
+      content="border-radius, box-shadow, efeitos CSS, gerador de CSS, design web, ferramenta CSS"
+    />
+    <meta name="author" content="Fernando Terra" />
+    <!-- Links alternativos para SEO em várias línguas -->
+    <link
+      rel="alternate"
+      href="https://geradorderadius.site/en"
+      hreflang="en"
+    />
+    <link
+      rel="alternate"
+      href="https://geradorderadius.site/pt-BR"
+      hreflang="pt-BR"
+    />
+    <link
+      rel="alternate"
+      href="https://geradorderadius.site/es"
+      hreflang="es"
+    />
+    <link
+      rel="alternate"
+      href="https://geradorderadius.site/fr"
+      hreflang="fr"
+    />
+    <link
+      rel="alternate"
+      href="https://geradorderadius.site/de"
+      hreflang="de"
+    />
+
+    <!-- Open Graph para redes sociais -->
+    <meta property="og:title" content="Gerador de Efeitos CSS" />
+    <meta
+      property="og:description"
+      content="Crie efeitos CSS com uma ferramenta prática para desenvolvedores."
+    />
+    <meta property="og:image" content="/images/favicon.png" />
+    <meta property="og:url" content="https://seusite.com" />
+
+    <link rel="stylesheet" href="/css/index.css" />
+    <link rel="icon" href="images/favicon.png" type="image/x-icon" />
+  </head>
+  <body>
+    <header>
+      <h1>Gerador de Efeitos CSS</h1>
+
+      <nav class="section-container">
+        <h2>Seções</h2>
+        <div class="sidebar">
+          <ul>
+            <li><a href="/index.html" class="nav-item">Home</a></li>
+            <li><a href="/pages/border-radius.html">Border-Radius</a></li>
+            <li>
+              <a href="/pages/boxShadow.html" class="nav-item">Box-Shadow</a>
+            </li>
+            <li>
+              <a href="/pages/text-size.html" class="nav-item">Text-Size</a>
+            </li>
+            <li>
+              <a href="/pages/gradient.html" class="nav-item">Gradient</a>
+            </li>
+            <li id="c">
+              <a href="/pages/cursor.html" class="nav-item">CSS-Cursor</a>
+            </li>
+            <li>
+              <a href="/pages/transform.html" class="nav-item">Transform</a>
+            </li>
+            <li><a href="/pages/filter.html" class="nav-item">Filter</a></li>
+            <li><a href="/pages/border.html" class="nav-item">Border</a></li>
+            <li>
+              <a href="/pages/rgba.html" class="nav-item">RGBA & Hex Color</a>
+            </li>
+            <li id="m">
+              <a href="/pages/columns.html" class="nav-item"
+                >Multiple Columns</a
+              >
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section>
+        <p>
+          O Gerador de Efeitos CSS é uma ferramenta inovadora para
+          desenvolvedores web explorarem e aplicarem efeitos CSS de maneira
+          prática e interativa. Com ele, você pode experimentar propriedades
+          como <strong>border-radius</strong>, <strong>box-shadow</strong> e
+          <strong>gradientes</strong>, visualizando mudanças em tempo real e
+          adaptando designs facilmente.
+        </p>
+      </section>
+
+      <section>
+        <p>
+          Todos os direitos reservados. Este site está sujeito aos
+          <a href="/pages/termosuso.html" aria-label="Termos de uso"
+            >termos de uso</a
+          >
+          e à
+          <a href="/pages/politicas.html" aria-label="Política de privacidade"
+            >política de privacidade</a
+          >.
+        </p>
+        <p>
+          <a href="https://www.facebook.com/profile.php?id=61568322650659"
+            >Contato</a
+          >
+        </p>
+      </section>
+    </main>
+    <script>
+      // Destaca a seção ativa ao carregar a página
+      const currentPath = window.location.pathname;
+      document.querySelectorAll(".nav-item").forEach((link) => {
+        if (link.getAttribute("href") === currentPath) {
+          link.classList.add("active");
+        }
+      });
+    </script>
+  </body>
+</html>

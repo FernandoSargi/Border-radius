@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Gerador de efeitos CSS para filtros de imagem. Ajuste saturação, brilho e contraste com facilidade."
+    />
+    <meta name="google-adsense-account" content="ca-pub-3282826002273378" />
+    <meta name="keywords" content="CSS, filtros, efeitos CSS, design web" />
+    <title>Gerador de Efeitos CSS - Filtros de Imagem</title>
+    <link rel="stylesheet" href="/css/filter.css" />
+    <link rel="icon" href="images/favicon.png" type="image/x-icon" />
+  </head>
+  <body>
+    <header>
+      <h1>Gerador de Efeitos CSS</h1>
+      <nav class="section-container">
+        <h2>Seções</h2>
+        <div class="sidebar">
+          <ul>
+            <li><a href="/index.html" class="nav-item">Home</a></li>
+            <li><a href="/pages/border-radius.html">Border-Radius</a></li>
+            <li>
+              <a href="/pages/boxShadow.html" class="nav-item">Box-Shadow</a>
+            </li>
+            <li>
+              <a href="/pages/text-size.html" class="nav-item">Text-Size</a>
+            </li>
+            <li>
+              <a href="/pages/gradient.html" class="nav-item">Gradient</a>
+            </li>
+            <li id="c">
+              <a href="/pages/cursor.html" class="nav-item">CSS-Cursor</a>
+            </li>
+            <li>
+              <a href="/pages/transform.html" class="nav-item">Transform</a>
+            </li>
+            <li><a href="/pages/filter.html" class="nav-item">Filter</a></li>
+            <li><a href="/pages/border.html" class="nav-item">Border</a></li>
+            <li>
+              <a href="/pages/rgba.html" class="nav-item">RGBA & Hex Color</a>
+            </li>
+            <li id="m">
+              <a href="/pages/columns.html" class="nav-item"
+                >Multiple Columns</a
+              >
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <div class="filter-container">
+        <div class="control-panel">
+          <h2>Filtros de Imagem</h2>
+
+          <label for="brightness">Brilho:</label>
+          <input type="range" id="brightness" min="0" max="200" value="100" />
+
+          <label for="contrast">Contraste:</label>
+          <input type="range" id="contrast" min="0" max="200" value="100" />
+
+          <label for="saturate">Saturação:</label>
+          <input type="range" id="saturate" min="0" max="200" value="100" />
+
+          <label for="grayscale">Tons de Cinza:</label>
+          <input type="range" id="grayscale" min="0" max="100" value="0" />
+
+          <label for="sepia">Sépia:</label>
+          <input type="range" id="sepia" min="0" max="100" value="0" />
+
+          <button id="resetButton">Resetar Filtros</button>
+          <p class="filter-description">
+            Ajuste os controles acima para modificar a aparência da
+            <a
+              href="https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/Array/filter"
+              target="_blank"
+              rel="noopener noreferrer"
+              >imagem</a
+            >. Use o brilho para iluminar ou escurecer, o contraste para realçar
+            diferenças de cor, e a saturação para intensificar ou desbotar as
+            cores. Os filtros de tons de cinza e sépia podem ser usados para
+            criar efeitos vintage.
+          </p>
+        </div>
+
+        <div class="image-container">
+          <img
+            src="/images/vizag-explore-icopw1LA668-unsplash.jpg"
+            alt="Imagem para aplicar filtros"
+            id="image"
+          />
+          <div class="css-output">
+            <pre id="cssOutput">
+  filter: brightness(100%) contrast(100%) saturate(100%) grayscale(0%) sepia(0%);</pre
+            >
+          </div>
+
+          <button id="copyButton">Copiar CSS</button>
+        </div>
+      </div>
+
+      <!-- Exemplos de Propriedades de Filtro -->
+      <div class="examples-box">
+        <h3>Exemplos de Propriedades CSS - Filtro</h3>
+        <p>
+          <strong>brightness(valor)</strong> - Ajusta o brilho da imagem.
+          Valores acima de 100 aumentam o brilho, enquanto valores abaixo de 100
+          diminuem.
+        </p>
+        <pre>filter: brightness(150%);</pre>
+
+        <p>
+          <strong>contrast(valor)</strong> - Ajusta o contraste da imagem.
+          Valores acima de 100 aumentam o contraste, enquanto valores abaixo de
+          100 o diminuem.
+        </p>
+        <pre>filter: contrast(200%);</pre>
+
+        <p>
+          <strong>saturate(valor)</strong> - Controla a saturação das cores na
+          imagem. Valores acima de 100 intensificam as cores, enquanto valores
+          abaixo de 100 as desbotam.
+        </p>
+        <pre>filter: saturate(120%);</pre>
+
+        <p>
+          <strong>grayscale(valor)</strong> - Converte a imagem para tons de
+          cinza. O valor 0% mantém as cores, enquanto 100% converte a imagem
+          para totalmente em preto e branco.
+        </p>
+        <pre>filter: grayscale(50%);</pre>
+
+        <p>
+          <strong>sepia(valor)</strong> - Aplica um tom sépia à imagem, dando um
+          efeito vintage. O valor 0% mantém a imagem normal, enquanto 100%
+          aplica o máximo de sépia.
+        </p>
+        <pre>filter: sepia(80%);</pre>
+
+        <p>
+          <strong>blur(valor)</strong> - Aplica um desfoque à imagem. O valor é
+          dado em pixels.
+        </p>
+        <pre>filter: blur(5px);</pre>
+
+        <p>
+          <strong>invert(valor)</strong> - Inverte as cores da imagem. O valor
+          0% mantém as cores, enquanto 100% inverte totalmente as cores.
+        </p>
+        <pre>filter: invert(100%);</pre>
+
+        <p>
+          <strong>hue-rotate(valor)</strong> - Rotaciona o matiz da imagem,
+          afetando suas cores. O valor é dado em graus (de 0° a 360°).
+        </p>
+        <pre>filter: hue-rotate(90deg);</pre>
+
+        <p>
+          <strong
+            >drop-shadow(deslocamento-x, deslocamento-y, desfoque, cor)</strong
+          >
+          - Aplica uma sombra projetada na imagem.
+        </p>
+        <pre>filter: drop-shadow(10px 10px 15px rgba(0, 0, 0, 0.5));</pre>
+      </div>
+    </main>
+
+    <script src="/script/Filter.js"></script>
+  </body>
+</html>

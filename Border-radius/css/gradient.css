@@ -1,0 +1,220 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0;
+  padding: 20px;
+  background-color: #f9f9f9;
+  font-family: Arial, sans-serif;
+}
+
+header {
+  text-align: center;
+  padding: 20px;
+}
+
+.section-container {
+  text-align: center;
+}
+
+/* Estilo da sidebar */
+.sidebar {
+  background-color: #e2e2e2;
+  padding: 15px;
+  margin: 20px auto;
+  width: 100%;
+  max-width: 600px;
+  overflow-x: auto;
+}
+
+.sidebar h2 {
+  text-align: center;
+}
+
+.sidebar ul {
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.sidebar li {
+  margin: 5px;
+}
+
+.sidebar a {
+  text-decoration: none;
+  color: #333;
+  display: block;
+  padding: 10px;
+  border-radius: 5px;
+  min-width: 120px;
+  text-align: center;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.sidebar a:hover {
+  background-color: #007bff;
+  color: white;
+}
+
+/* Estilo do quadrado de gradiente */
+.gradient-container {
+  display: flex;
+  align-items: center; /* Alinha os itens verticalmente ao centro */
+  gap: 15px;
+  justify-content: center; /* Centraliza os elementos dentro do contêiner */
+}
+
+.gradient-square {
+  width: 300px;
+  height: 300px;
+  background: linear-gradient(
+    to right,
+    #ff5733,
+    #33ff57
+  ); /* Gradiente inicial */
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  margin-top: 20px;
+}
+
+/* Contêiner do input */
+.input-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center; /* Centraliza o input dentro do contêiner */
+  margin-top: 20px; /* Adiciona margem superior para espaçamento */
+}
+
+/* Estilo da descrição do gradiente */
+.gradient-description {
+  margin-top: 20px;
+  font-size: 14px;
+  color: #555;
+  max-width: 300px; /* Limite a largura do texto para melhor legibilidade */
+  text-align: center; /* Centraliza o texto */
+}
+
+/* Estilo dos botões */
+button {
+  margin-top: 10px;
+  padding: 5px 10px;
+  border: solid 3px #32cd32;
+  background-color: #007bff;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+/* Adicione este CSS para centralizar as divs e aplicar box-shadow */
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centraliza horizontalmente */
+  margin: 0; /* Remove margens padrão */
+}
+
+.gradient-container {
+  display: flex; /* Flexbox para alinhar horizontalmente */
+  align-items: center; /* Alinha itens verticalmente ao centro */
+  justify-content: center;
+  margin-top: 20px;
+  padding: 20px;
+  background-color: #f0f0f0; /* Cor de fundo para destacar a seção */
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+  border-radius: 8px; /* Borda arredondada */
+}
+
+.input-container {
+  display: flex;
+  flex-direction: column;
+  margin-right: 20px; /* Espaço à direita do contêiner de entrada */
+}
+
+.example-box {
+  background-color: #f0f0f0;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+  border-radius: 8px;
+  padding: 20px;
+  display: inline-block;
+  width: 80%; /* Ajuste a largura conforme necessário */
+  max-width: 600px; /* Limite a largura máxima */
+}
+
+.gradient-square {
+  width: 200px; /* Defina a largura desejada */
+  height: 200px; /* Defina a altura desejada */
+  border: 1px solid #ccc; /* Opcional: borda para visualizar o espaço */
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5); /* Adiciona sombra ao gradiente */
+}
+
+.gradient-description {
+  text-align: center; /* Centraliza o texto */
+  margin: 10px 0; /* Espaço acima e abaixo da descrição */
+}
+
+.centered-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+  padding: 20px; /* Adiciona espaço interno */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Adiciona sombra à div */
+  border-radius: 8px; /* Borda arredondada */
+  background-color: #ffffff; /* Cor de fundo para destacar a seção */
+}
+
+/* Centraliza o botão de copiar */
+#copy-gradient {
+  margin-top: 10px; /* Espaço acima do botão */
+  padding: 10px 20px; /* Aumenta o tamanho do botão */
+  border: none; /* Remove a borda padrão */
+  border-radius: 5px; /* Borda arredondada */
+  background-color: #4caf50; /* Cor de fundo do botão */
+  font-size: 16px; /* Tamanho da fonte do botão */
+  cursor: pointer; /* Cursor ao passar sobre o botão */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Sombra do botão */
+  transition: background-color 0.3s, box-shadow 0.3s; /* Transições suaves */
+}
+
+#copy-gradient:hover {
+  background-color: #45a049; /* Cor de fundo ao passar o mouse */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4); /* Aumenta a sombra ao passar o mouse */
+}
+
+.gradient-usage {
+  text-align: center; /* Centraliza o texto */
+  margin-top: 20px; /* Espaço acima da seção de uso */
+  padding: 20px; /* Adiciona espaço interno */
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5); /* Adiciona sombra à seção */
+  border-radius: 8px; /* Borda arredondada para a seção */
+  background-color: #f9f9f9; /* Cor de fundo para destacar a seção */
+}
+
+/* Estilo ativo do link na sidebar */
+.sidebar a.active {
+  border: 3px solid #ff5722; /* Espessura aumentada */
+  color: white; /* Cor do texto */
+  background-color: #0056b3; /* Azul mais escuro para melhor contraste */
+  font-weight: bold; /* Destaca o texto */
+}
+
+/* Responsividade */
+@media screen and (max-width: 800px) {
+  .gradient-container {
+    flex-direction: column; /* Muda a direção para coluna em telas menores */
+    align-items: center; /* Centraliza os itens */
+  }
+}

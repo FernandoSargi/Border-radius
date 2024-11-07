@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Meta Tags para SEO -->
+    <meta
+      name="description"
+      content="Explore o Gerador de Efeitos CSS com gradientes. Crie e visualize gradientes lineares e radiais para personalizar o design do seu site. Aprenda a usar CSS para gradientes e efeitos visuais."
+    />
+    <meta
+      name="keywords"
+      content="CSS, gradientes, design web, efeitos CSS, gradiente linear, gradiente radial, gerar gradientes, personalização de design, efeitos visuais"
+    />
+    <meta name="robots" content="index, follow" />
+
+    <!-- Links de Alternância para SEO em Várias Línguas -->
+    <link
+      rel="alternate"
+      href="https://geradorderadius.site/en"
+      hreflang="en"
+    />
+    <link
+      rel="alternate"
+      href="https://geradorderadius.site/pt-BR"
+      hreflang="pt-BR"
+    />
+    <link
+      rel="alternate"
+      href="https://geradorderadius.site/es"
+      hreflang="es"
+    />
+    <link
+      rel="alternate"
+      href="https://geradorderadius.site/fr"
+      hreflang="fr"
+    />
+    <link
+      rel="alternate"
+      href="https://geradorderadius.site/de"
+      hreflang="de"
+    />
+
+    <!-- Open Graph Tags para Redes Sociais -->
+    <meta property="og:title" content="Gerador de Efeitos CSS - Gradientes" />
+    <meta
+      property="og:description"
+      content="Crie gradientes lineares e radiais facilmente com o nosso Gerador de Efeitos CSS. Personalize cores, ângulos e veja os resultados em tempo real para aplicar ao seu site."
+    />
+    <meta
+      property="og:image"
+      content="https://www.seusite.com/images/preview-image.jpg"
+    />
+    <meta
+      property="og:url"
+      content="https://www.seusite.com/pages/gradient.html"
+    />
+    <meta property="og:type" content="website" />
+
+    <!-- Twitter Card Tags -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Gerador de Efeitos CSS - Gradientes" />
+    <meta
+      name="twitter:description"
+      content="Crie e visualize gradientes lineares e radiais com o Gerador de Efeitos CSS. Personalize o design do seu site com facilidade."
+    />
+    <meta
+      name="twitter:image"
+      content="https://www.seusite.com/images/preview-image.jpg"
+    />
+
+    <title>Gerador de Efeitos CSS - Gradient</title>
+    <link rel="stylesheet" href="/css/gradient.css" />
+
+    <!-- Favicon -->
+    <link rel="icon" href="/images/favicon.png" type="image/x-icon" />
+  </head>
+  <body>
+    <header>
+      <h1>Gerador de Efeitos CSS</h1>
+      <nav class="section-container">
+        <h2>Seções</h2>
+        <div class="sidebar">
+          <ul>
+            <li><a href="/index.html" class="nav-item">Home</a></li>
+            <li><a href="/pages/border-radius.html">Border-Radius</a></li>
+            <li>
+              <a href="/pages/boxShadow.html" class="nav-item">Box-Shadow</a>
+            </li>
+            <li>
+              <a href="/pages/text-size.html" class="nav-item">Text-Size</a>
+            </li>
+            <li>
+              <a href="/pages/gradient.html" class="nav-item">Gradient</a>
+            </li>
+            <li id="c">
+              <a href="/pages/cursor.html" class="nav-item">CSS-Cursor</a>
+            </li>
+            <li>
+              <a href="/pages/transform.html" class="nav-item">Transform</a>
+            </li>
+            <li><a href="/pages/filter.html" class="nav-item">Filter</a></li>
+            <li><a href="/pages/border.html" class="nav-item">Border</a></li>
+            <li>
+              <a href="/pages/rgba.html" class="nav-item">RGBA & Hex Color</a>
+            </li>
+            <li id="m">
+              <a href="/pages/columns.html" class="nav-item"
+                >Multiple Columns</a
+              >
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <div class="gradient-container">
+        <div class="input-container">
+          <label for="color-picker1">Escolha a primeira cor:</label>
+          <input type="color" id="color-picker1" />
+          <label for="color-picker2">Escolha a segunda cor:</label>
+          <input type="color" id="color-picker2" />
+
+          <label for="gradient-type">Tipo de Gradiente:</label>
+          <select id="gradient-type">
+            <option value="linear">Linear</option>
+            <option value="radial">Radial</option>
+          </select>
+
+          <label for="angle-slider">Ângulo:</label>
+          <input type="range" id="angle-slider" min="0" max="360" value="90" />
+          <span id="angle-value">90°</span>
+        </div>
+
+        <div class="gradient-square" id="gradient-square"></div>
+      </div>
+
+      <div class="centered-container">
+        <p class="gradient-description">
+          O gradiente é uma transição suave entre duas ou mais cores, criando um
+          efeito visual atrativo em design gráfico e web. Ele pode ser aplicado
+          em fundos, botões e elementos de interface.
+        </p>
+        <button id="copy-gradient">Copiar CSS</button>
+      </div>
+
+      <!-- Seção de Instruções sobre o uso de Gradientes -->
+      <section class="gradient-usage centered-container">
+        <h2>Como Usar Gradientes no CSS</h2>
+        <p>
+          Você pode usar gradientes como cor de fundo em elementos HTML
+          utilizando a propriedade <code>background</code> no CSS.
+        </p>
+        <p>Aqui está um exemplo de como usar um gradiente linear:</p>
+        <pre>
+  <code>
+  background: linear-gradient(90deg, #ff7e5f, #feb47b);
+  </code>
+        </pre>
+        <p>E para um gradiente radial:</p>
+        <pre>
+  <code>
+  background: radial-gradient(circle, #ffafbd, #ffc3a0);
+  </code>
+        </pre>
+      </section>
+
+      <!-- Seção de Exemplos com Gradientes -->
+      <div class="examples-container centered-container">
+        <h2>Exemplos de Gradientes</h2>
+        <div class="example-box">
+          <div
+            style="
+              background: linear-gradient(90deg, #ff7e5f, #feb47b);
+              height: 100px;
+              margin-bottom: 10px;
+            "
+          ></div>
+          <p>Gradiente Linear: #ff7e5f a #feb47b</p>
+          <div
+            style="
+              background: radial-gradient(circle, #ffafbd, #ffc3a0);
+              height: 100px;
+              margin-bottom: 10px;
+            "
+          ></div>
+          <p>Gradiente Radial: #ffafbd a #ffc3a0</p>
+        </div>
+      </div>
+    </main>
+
+    <script src="/script/Gradient.js" defer></script>
+  </body>
+</html>

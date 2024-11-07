@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Ferramenta para gerar e personalizar efeitos CSS com box-shadow. Aprenda a criar sombras e aprimorar seus elementos com facilidade."
+    />
+    <meta
+      name="keywords"
+      content="CSS, box-shadow, efeitos CSS, design web, sombras CSS"
+    />
+    <meta name="robots" content="index, follow" />
+    <link rel="stylesheet" href="/css/boxShadow.css" />
+    <link rel="icon" href="images/favicon.png" type="image/x-icon" />
+    <title>Gerador de Efeitos CSS - Box Shadow</title>
+
+    <!-- Links alternativos para SEO em várias línguas -->
+    <link
+      rel="alternate"
+      href="https://geradorderadius.site/en/box-shadow"
+      hreflang="en"
+    />
+    <link
+      rel="alternate"
+      href="https://geradorderadius.site/pt-BR/box-shadow"
+      hreflang="pt-BR"
+    />
+    <link
+      rel="alternate"
+      href="https://geradorderadius.site/es/box-shadow"
+      hreflang="es"
+    />
+    <link
+      rel="alternate"
+      href="https://geradorderadius.site/fr/box-shadow"
+      hreflang="fr"
+    />
+    <link
+      rel="alternate"
+      href="https://geradorderadius.site/de/box-shadow"
+      hreflang="de"
+    />
+
+    <!-- Open Graph Meta Tags para compartilhamento social -->
+    <meta property="og:title" content="Gerador de Efeitos CSS - Box Shadow" />
+    <meta
+      property="og:description"
+      content="Ferramenta para criar e personalizar box-shadow em CSS. Torne seu design web mais atraente com sombras dinâmicas."
+    />
+    <meta property="og:image" content="images/thumbnail.png" />
+    <meta
+      property="og:url"
+      content="https://geradorderadius.site/pt-BR/box-shadow"
+    />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Gerador de Efeitos CSS - Box Shadow" />
+    <meta
+      name="twitter:description"
+      content="Crie sombras dinâmicas com box-shadow e aprimore seus projetos CSS com facilidade."
+    />
+    <meta name="twitter:image" content="images/thumbnail.png" />
+
+    <style>
+      /* Centraliza todos os textos na página */
+      body {
+        text-align: center; /* Centraliza todo o texto no corpo */
+      }
+
+      /* Centraliza parágrafos com a classe "p" */
+      .p {
+        margin: 10px 0; /* Espaçamento vertical para parágrafos */
+        text-align: center; /* Centraliza o texto */
+      }
+
+      /* Centraliza textos não editáveis como títulos e rótulos */
+      h2,
+      h3,
+      label,
+      strong {
+        text-align: center; /* Centraliza textos não editáveis */
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Gerador de Efeitos CSS - Box Shadow</h1>
+      <nav class="section-container">
+        <h2>Seções de Estilos CSS</h2>
+        <div class="sidebar">
+          <ul>
+            <li><a href="/index.html" class="nav-item">Home</a></li>
+            <li><a href="/pages/border-radius.html">Border-Radius</a></li>
+            <li>
+              <a href="/pages/boxShadow.html" class="nav-item">Box-Shadow</a>
+            </li>
+            <li>
+              <a href="/pages/text-size.html" class="nav-item">Text-Size</a>
+            </li>
+            <li>
+              <a href="/pages/gradient.html" class="nav-item">Gradient</a>
+            </li>
+            <li id="c">
+              <a href="/pages/cursor.html" class="nav-item">CSS-Cursor</a>
+            </li>
+            <li>
+              <a href="/pages/transform.html" class="nav-item">Transform</a>
+            </li>
+            <li><a href="/pages/filter.html" class="nav-item">Filter</a></li>
+            <li><a href="/pages/border.html" class="nav-item">Border</a></li>
+            <li>
+              <a href="/pages/rgba.html" class="nav-item">RGBA & Hex Color</a>
+            </li>
+            <li id="m">
+              <a href="/pages/columns.html" class="nav-item"
+                >Multiple Columns</a
+              >
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <main class="main-content">
+      <div class="main-container">
+        <div class="control-panel">
+          <h3>Painel de Controle</h3>
+          <label for="h-offset">Deslocamento Horizontal:</label>
+          <input
+            type="range"
+            id="h-offset"
+            min="-50"
+            max="50"
+            value="10"
+            aria-labelledby="h-offset"
+          />
+
+          <label for="v-offset">Deslocamento Vertical:</label>
+          <input
+            type="range"
+            id="v-offset"
+            min="-50"
+            max="50"
+            value="10"
+            aria-labelledby="v-offset"
+          />
+
+          <label for="blur">Desfoque:</label>
+          <input
+            type="range"
+            id="blur"
+            min="0"
+            max="50"
+            value="20"
+            aria-labelledby="blur"
+          />
+
+          <label for="shadow-color">Cor da Sombra:</label>
+          <input
+            type="color"
+            id="shadow-color"
+            value="#000000"
+            aria-labelledby="shadow-color"
+          />
+
+          <button id="apply-shadow" aria-label="Aplicar sombra ao quadrado">
+            Aplicar Sombra
+          </button>
+          <button id="change-color" aria-label="Trocar cor do quadrado">
+            Trocar Cor do Quadrado
+          </button>
+          <button id="reset-shadow" aria-label="Resetar a sombra">
+            Resetar Sombra
+          </button>
+        </div>
+
+        <div class="square-container">
+          <h3>Visualização</h3>
+          <div class="quadrado" id="quadrado"></div>
+          <div id="infoText">Box Shadow: 10px 10px 20px #000000</div>
+          <button id="copyButton" aria-label="Copiar CSS">Copiar CSS</button>
+          <p class="p">
+            O
+            <a
+              href="https://developer.mozilla.org/en-US/docs/Web/CSS/box-shadow"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              box-shadow
+            </a>
+            é uma propriedade CSS que permite adicionar sombras a elementos
+            HTML, criando uma sensação de profundidade e dimensão.
+          </p>
+        </div>
+      </div>
+
+      <section class="tutorials">
+        <h2>Guias e Tutoriais sobre Box Shadow</h2>
+        <article>
+          <h3>Como Usar o Box Shadow</h3>
+          <p class="p">
+            O <strong>box-shadow</strong> pode ser aplicado a qualquer elemento
+            HTML, como <code>div</code>, <code>button</code> ou
+            <code>input</code>. Veja um exemplo básico:
+          </p>
+          <pre><code>
+div {
+  box-shadow: 10px 10px 20px #000000;
+}
+          </code></pre>
+          <p class="p">
+            Este código aplica uma sombra de 10 pixels à direita e 10 pixels
+            abaixo do elemento, com um desfoque de 20 pixels e uma cor preta.
+            Você pode personalizar os valores para obter diferentes efeitos.
+          </p>
+        </article>
+        <article>
+          <h3>Exemplos Práticos de Box Shadow</h3>
+          <p class="p">
+            Aqui estão alguns exemplos de como o <strong>box-shadow</strong>
+            pode ser usado:
+          </p>
+          <ul>
+            <li>
+              <strong>Elementos de Destaque:</strong> Sombreamento pode ajudar a
+              destacar elementos importantes.
+            </li>
+            <li>
+              <strong>Cartões:</strong> Cartões com sombras ficam mais
+              tridimensionais e visualmente atraentes.
+            </li>
+            <li>
+              <strong>Botões:</strong> Botões com sombras adicionam profundidade
+              e uma sensação de clique.
+            </li>
+          </ul>
+        </article>
+      </section>
+
+      <section class="examples">
+        <h2>Exemplos de Efeitos CSS com Box Shadow</h2>
+        <p class="p">
+          Veja como diferentes configurações de
+          <strong>box-shadow</strong> podem alterar a aparência dos elementos:
+        </p>
+        <div class="example-container">
+          <div class="example-box" style="box-shadow: none">Sem Sombra</div>
+          <div
+            class="example-box"
+            style="box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5)"
+          >
+            Sombra Leve
+          </div>
+          <div
+            class="example-box"
+            style="box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.8)"
+          >
+            Sombra Forte
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script src="/script/BoxShadow.js" defer></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const currentPath = window.location.pathname;
+        const navLinks = document.querySelectorAll(".sidebar a");
+
+        navLinks.forEach((link) => {
+          if (link.getAttribute("href") === currentPath) {
+            link.classList.add("active");
+          }
+        });
+      });
+    </script>
+  </body>
+</html>

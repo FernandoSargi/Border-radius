@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Meta Tags de SEO -->
+    <meta
+      name="description"
+      content="Explore o Gerador de Efeitos CSS para filtros de imagem. Ajuste brilho, contraste, saturação, tons de cinza e muito mais com facilidade. Aprenda a estilizar suas imagens com CSS!"
+    />
+    <meta
+      name="keywords"
+      content="CSS, filtros CSS, efeitos de imagem, design web, brilho, contraste, saturação, filtros de imagem CSS, efeitos visuais CSS"
+    />
+    <meta name="robots" content="index, follow" />
+
+    <!-- Open Graph Tags para Redes Sociais -->
+    <meta
+      property="og:title"
+      content="Gerador de Efeitos CSS - Filtros de Imagem"
+    />
+    <meta
+      property="og:description"
+      content="Explore os efeitos CSS para filtros de imagem, como brilho, contraste, saturação, e muito mais. Aprenda como aplicar filtros CSS às suas imagens."
+    />
+    <meta
+      property="og:image"
+      content="https://www.seusite.com/images/preview-image.jpg"
+    />
+    <meta
+      property="og:url"
+      content="https://www.seusite.com/pages/filter.html"
+    />
+    <meta property="og:type" content="website" />
+
+    <!-- Twitter Card Tags -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      name="twitter:title"
+      content="Gerador de Efeitos CSS - Filtros de Imagem"
+    />
+    <meta
+      name="twitter:description"
+      content="Explore os efeitos CSS para filtros de imagem e personalize a aparência de suas imagens com filtros de brilho, contraste e saturação."
+    />
+    <meta
+      name="twitter:image"
+      content="https://www.seusite.com/images/preview-image.jpg"
+    />
+
+    <!-- Links de alternância para SEO em várias línguas -->
+    <link
+      rel="alternate"
+      href="https://geradorderadius.site/en"
+      hreflang="en"
+    />
+    <link
+      rel="alternate"
+      href="https://geradorderadius.site/pt-BR"
+      hreflang="pt-BR"
+    />
+    <link
+      rel="alternate"
+      href="https://geradorderadius.site/es"
+      hreflang="es"
+    />
+    <link
+      rel="alternate"
+      href="https://geradorderadius.site/fr"
+      hreflang="fr"
+    />
+    <link
+      rel="alternate"
+      href="https://geradorderadius.site/de"
+      hreflang="de"
+    />
+
+    <title>Gerador de Efeitos CSS - Filtros de Imagem</title>
+    <link rel="stylesheet" href="/css/filter.css" />
+    <link rel="icon" href="images/favicon.png" type="image/x-icon" />
+  </head>
+  <body>
+    <header>
+      <h1>Gerador de Efeitos CSS</h1>
+      <nav class="section-container">
+        <h2>Seções do Gerador de Efeitos CSS</h2>
+        <div class="sidebar">
+          <ul>
+            <li><a href="/index.html" class="nav-item">Home</a></li>
+            <li><a href="/pages/border-radius.html">Border-Radius</a></li>
+            <li>
+              <a href="/pages/boxShadow.html" class="nav-item">Box-Shadow</a>
+            </li>
+            <li>
+              <a href="/pages/text-size.html" class="nav-item">Text-Size</a>
+            </li>
+            <li>
+              <a href="/pages/gradient.html" class="nav-item">Gradient</a>
+            </li>
+            <li id="c">
+              <a href="/pages/cursor.html" class="nav-item">CSS-Cursor</a>
+            </li>
+            <li>
+              <a href="/pages/transform.html" class="nav-item">Transform</a>
+            </li>
+            <li><a href="/pages/filter.html" class="nav-item">Filter</a></li>
+            <li><a href="/pages/border.html" class="nav-item">Border</a></li>
+            <li>
+              <a href="/pages/rgba.html" class="nav-item">RGBA & Hex Color</a>
+            </li>
+            <li id="m">
+              <a href="/pages/columns.html" class="nav-item"
+                >Multiple Columns</a
+              >
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section class="filter-container">
+        <div class="control-panel">
+          <h2>Filtros de Imagem CSS</h2>
+
+          <label for="brightness">Brilho:</label>
+          <input type="range" id="brightness" min="0" max="200" value="100" />
+
+          <label for="contrast">Contraste:</label>
+          <input type="range" id="contrast" min="0" max="200" value="100" />
+
+          <label for="saturate">Saturação:</label>
+          <input type="range" id="saturate" min="0" max="200" value="100" />
+
+          <label for="grayscale">Tons de Cinza:</label>
+          <input type="range" id="grayscale" min="0" max="100" value="0" />
+
+          <label for="sepia">Sépia:</label>
+          <input type="range" id="sepia" min="0" max="100" value="0" />
+
+          <button id="resetButton">Resetar Filtros</button>
+          <p class="filter-description">
+            Ajuste os controles para modificar a aparência da imagem. Alterar
+            brilho, contraste e saturação ou aplicar efeitos de sépia e tons de
+            cinza para um visual único.
+          </p>
+        </div>
+
+        <div class="image-container">
+          <img
+            src="/images/vizag-explore-icopw1LA668-unsplash.jpg"
+            alt="Imagem para aplicar filtros CSS"
+            id="image"
+          />
+          <div class="css-output">
+            <pre id="cssOutput">
+  filter: brightness(100%) contrast(100%) saturate(100%) grayscale(0%) sepia(0%);</pre
+            >
+          </div>
+
+          <button id="copyButton">Copiar CSS</button>
+        </div>
+      </section>
+
+      <section class="examples-box">
+        <h3>Exemplos de Propriedades CSS para Filtros de Imagem</h3>
+        <!-- Exemplos de filtros CSS -->
+        <p><strong>brightness(valor)</strong> - Ajuste o brilho da imagem.</p>
+        <pre>filter: brightness(150%);</pre>
+
+        <p><strong>contrast(valor)</strong> - Ajuste o contraste da imagem.</p>
+        <pre>filter: contrast(200%);</pre>
+
+        <p><strong>saturate(valor)</strong> - Ajuste a saturação das cores.</p>
+        <pre>filter: saturate(120%);</pre>
+
+        <p>
+          <strong>grayscale(valor)</strong> - Converte a imagem para tons de
+          cinza.
+        </p>
+        <pre>filter: grayscale(50%);</pre>
+
+        <p>
+          <strong>sepia(valor)</strong> - Aplica um efeito vintage de sépia.
+        </p>
+        <pre>filter: sepia(80%);</pre>
+      </section>
+    </main>
+
+    <script src="/script/Filter.js"></script>
+  </body>
+</html>

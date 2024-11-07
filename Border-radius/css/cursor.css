@@ -1,0 +1,215 @@
+/* Estilos globais */
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%; /* Garantir que o html e o body ocupem toda a altura da tela */
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f9f9f9;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start; /* Deixe o conteúdo no topo */
+  min-height: 100vh; /* Garantir que o body tenha a altura total da tela */
+  text-align: center;
+}
+
+header {
+  width: 100%; /* Garante que o cabeçalho ocupe toda a largura */
+  padding: 0 20px; /* Garante que o título não fique colado nas bordas */
+  box-sizing: border-box; /* Para garantir que o padding não cause overflow */
+  margin-bottom: 20px;
+  margin-top: 50px; /* Adiciona espaço ao topo */
+}
+
+h1 {
+  font-size: 2rem;
+  margin: 0;
+  word-wrap: break-word; /* Garante que o texto será quebrado, se necessário */
+  overflow-wrap: break-word; /* Para quebrar a palavra no caso de texto muito longo */
+}
+
+h2 {
+  text-align: center;
+}
+
+/* Container da seção principal */
+.section-container {
+  width: 100%;
+  padding: 0 20px;
+}
+
+.sidebar {
+  background-color: #e2e2e2;
+  padding: 15px;
+  margin: 20px auto;
+  width: 100%;
+  max-width: 600px;
+  overflow-x: auto;
+  display: block;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  /* Removendo o border-radius da sidebar */
+  border-radius: 0;
+}
+
+.sidebar h2 {
+  text-align: center;
+}
+
+.sidebar ul {
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.sidebar li {
+  margin: 5px;
+}
+
+.sidebar a {
+  text-decoration: none;
+  color: #333;
+  display: block;
+  padding: 10px;
+  border-radius: 5px;
+  min-width: 120px;
+  text-align: center;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.sidebar a:hover {
+  background-color: #007bff;
+  color: white;
+}
+
+.sidebar a.active {
+  border: 3px solid #ff5722;
+  color: white;
+  background-color: #0056b3;
+  font-weight: bold;
+}
+
+/* Seção dos efeitos de cursor */
+.content {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 900px;
+  margin-top: 30px;
+}
+
+.button-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.effect-button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #007bff;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  min-width: 120px;
+}
+
+.effect-button:hover {
+  background-color: #0056b3;
+}
+
+.cursor-description {
+  margin-top: 20px;
+  font-size: 14px;
+  color: #555;
+  max-width: 600px; /* Limite a largura do texto para melhor legibilidade */
+  text-align: center;
+}
+
+/* Seção explicativa sobre os tipos de cursor */
+.cursor-info {
+  background-color: #fafafa;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 900px;
+  margin-top: 30px;
+}
+
+.cursor-info h2 {
+  font-size: 1.4rem;
+  margin-bottom: 15px;
+}
+
+.cursor-info p {
+  font-size: 1rem;
+  margin-bottom: 10px;
+}
+
+.cursor-info ul {
+  list-style-type: none;
+  padding: 0;
+  font-size: 1rem;
+  margin-bottom: 10px;
+}
+
+code {
+  background-color: #f4f4f4;
+  padding: 2px 6px;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+/* Ajustes para dispositivos menores */
+@media screen and (max-width: 800px) {
+  .button-container {
+    width: 100%;
+    gap: 5px;
+  }
+
+  .effect-button {
+    width: 100%;
+  }
+
+  .sidebar {
+    margin: 10px auto;
+    max-width: 100%;
+  }
+
+  .content,
+  .cursor-info {
+    max-width: 100%;
+  }
+
+  .cursor-description {
+    font-size: 13px;
+  }
+
+  .cursor-info h2 {
+    font-size: 1.2rem;
+  }
+
+  .cursor-info p {
+    font-size: 0.9rem;
+  }
+}
+
+/* Adicionando espaço após o conteúdo */
+main {
+  margin-bottom: 50px; /* Espaço em branco após o conteúdo */
+}

@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Gerador de Efeitos CSS - Personalize Tamanhos de Fonte</title>
+
+    <!-- Meta Tags para SEO -->
+    <meta
+      name="description"
+      content="Melhore a estética e a legibilidade do seu site com o Gerador de Efeitos CSS. Ajuste o tamanho da fonte de forma rápida e intuitiva."
+    />
+    <meta
+      name="keywords"
+      content="CSS, tamanho da fonte, design web, efeitos CSS, personalização de fonte, acessibilidade, design responsivo"
+    />
+    <meta name="robots" content="index, follow" />
+    <meta name="author" content="Fernando Terra" />
+
+    <!-- Canonical URL -->
+    <link
+      rel="canonical"
+      href="https://geradorderadius.site/pages/text-size.html"
+    />
+
+    <!-- Open Graph Meta Tags -->
+    <meta
+      property="og:title"
+      content="Gerador de Efeitos CSS - Personalize Tamanhos de Fonte"
+    />
+    <meta
+      property="og:description"
+      content="Melhore a estética do seu site ajustando tamanhos de fonte com nosso gerador de efeitos CSS. Fácil, rápido e intuitivo!"
+    />
+    <meta
+      property="og:url"
+      content="https://geradorderadius.site/pages/text-size.html"
+    />
+    <meta
+      property="og:image"
+      content="https://geradorderadius.site/images/thumbnail.jpg"
+    />
+    <meta
+      property="og:image:alt"
+      content="Ilustração de ajuste de tamanho de fonte usando CSS"
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="pt_BR" />
+
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      name="twitter:title"
+      content="Gerador de Efeitos CSS - Personalize Tamanhos de Fonte"
+    />
+    <meta
+      name="twitter:description"
+      content="Ajuste facilmente tamanhos de fonte no seu site com nosso gerador de efeitos CSS. Experimente já!"
+    />
+    <meta
+      name="twitter:image"
+      content="https://geradorderadius.site/images/thumbnail.jpg"
+    />
+    <meta
+      name="twitter:image:alt"
+      content="Ilustração de ferramenta para ajustar fontes no CSS"
+    />
+    <script
+      async
+      src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3282826002273378"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Links Alternativos -->
+    <link
+      rel="alternate"
+      href="https://geradorderadius.site/en"
+      hreflang="en"
+    />
+
+    <link rel="icon" href="images/favicon.png" type="image/x-icon" />
+    <link rel="stylesheet" href="/css/textSize.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Gerador de Efeitos CSS</h1>
+      <nav class="section-container">
+        <h2 class="visually-hidden">Navegação</h2>
+        <div class="sidebar">
+          <ul>
+            <li>
+              <a href="/index.html" class="nav-item" aria-label="Página inicial"
+                >Home</a
+              >
+            </li>
+            <li>
+              <a href="/pages/border-radius.html" aria-label="Border-Radius"
+                >Border-Radius</a
+              >
+            </li>
+            <li>
+              <a
+                href="/pages/boxShadow.html"
+                class="nav-item"
+                aria-label="Box-Shadow"
+                >Box-Shadow</a
+              >
+            </li>
+            <li>
+              <a href="/pages/text-size.html" class="nav-item">Text-Size</a>
+            </li>
+            <li>
+              <a href="/pages/gradient.html" class="nav-item">Gradient</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <!-- Primeira Seção: Controles de Tamanho da Fonte -->
+      <section aria-labelledby="font-size-control">
+        <h2 id="font-size-control">Controle de Tamanho da Fonte</h2>
+        <div class="text-size-container">
+          <input
+            type="text"
+            id="text-input"
+            placeholder="Digite o texto aqui"
+            aria-label="Campo de texto para personalização"
+          />
+          <div class="slider-container">
+            <label for="font-size-slider">Tamanho da Fonte:</label>
+            <input
+              type="range"
+              id="font-size-slider"
+              min="10"
+              max="100"
+              value="16"
+            />
+            <span id="font-size-value">16px</span>
+          </div>
+          <p id="text-display" style="font-size: 16px">Texto de exemplo</p>
+          <div id="infoText" style="margin-top: 10px">
+            Tamanho do Texto: 16px
+          </div>
+          <button id="copyButton">Copiar CSS</button>
+        </div>
+      </section>
+
+      <!-- Segunda Seção: Explicação do Font-Size -->
+      <section aria-labelledby="font-size-explanation">
+        <h2 id="font-size-explanation">Entendendo a Propriedade Font-Size</h2>
+        <p>
+          A propriedade <code>font-size</code> em CSS define o tamanho do texto
+          de um elemento. Ela pode ser definida em várias unidades, como pixels
+          (<code>px</code>), porcentagens (<code>%</code>), <code>em</code> e
+          <code>rem</code>.
+        </p>
+      </section>
+    </main>
+
+    <script src="/script/TextSize.js"></script>
+  </body>
+</html>

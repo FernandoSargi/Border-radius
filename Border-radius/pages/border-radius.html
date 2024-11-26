@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <script
+      async
+      src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3282826002273378"
+      crossorigin="anonymous"
+    ></script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Ferramenta online para criar e personalizar efeitos CSS como border-radius, box-shadow e cores. Aprenda design de bordas e transforme o estilo dos seus elementos com facilidade."
+    />
+    <meta
+      name="keywords"
+      content="gerador CSS, border-radius, box-shadow, design de bordas, ferramentas CSS, efeitos CSS online, CSS para web design"
+    />
+    <!-- Links Alternativos -->
+    <link
+      rel="alternate"
+      href="https://geradorderadius.site/en"
+      hreflang="en"
+    />
+    <meta name="google-adsense-account" content="ca-pub-3282826002273378" />
+    <title>
+      Gerador de Efeitos CSS - Crie Border Radius, Sombras e Cores com
+      Facilidade
+    </title>
+    <link rel="stylesheet" href="/css/borderRadius.css" />
+    <link rel="icon" href="images/favicon.png" type="image/x-icon" />
+
+    <!-- Open Graph Meta Tags para melhor compartilhamento em redes sociais -->
+    <meta
+      property="og:title"
+      content="Gerador de Efeitos CSS - Crie Border Radius e Sombras"
+    />
+    <meta
+      property="og:description"
+      content="Ferramenta online para criar efeitos CSS como border-radius e sombras. Aprenda a estilizar com CSS facilmente."
+    />
+    <meta property="og:image" content="images/thumbnail.png" />
+    <meta property="og:url" content="https://geradorderadius.site" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      name="twitter:title"
+      content="Gerador de Efeitos CSS - Border Radius, Sombras e Mais"
+    />
+    <meta
+      name="twitter:description"
+      content="Ferramenta para criar efeitos CSS, incluindo border-radius e sombras. Aprenda CSS para design web moderno."
+    />
+    <meta name="twitter:image" content="images/thumbnail.png" />
+
+    <style>
+      /* Centraliza todos os textos na página */
+      body {
+        text-align: center; /* Centraliza todo o texto no corpo */
+      }
+
+      /* Alinhamento central para parágrafos */
+      p {
+        margin: 10px 0; /* Espaçamento vertical para parágrafos */
+      }
+
+      h1,
+      h2,
+      h3 {
+        text-align: center; /* Centraliza títulos também */
+      }
+
+      ul {
+        padding: 0;
+        list-style: none; /* Remove os marcadores da lista */
+        text-align: center; /* Centraliza listas */
+      }
+
+      /* Se precisar centralizar outros elementos que podem ter texto */
+      .sidebar a {
+        display: block; /* Garante que os links ocupem toda a largura disponível */
+        text-align: center; /* Centraliza o texto nos links */
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Gerador de Efeitos CSS: Border Radius, Sombras e Mais</h1>
+      <nav class="section-container">
+        <h2>Seções de Estilos CSS</h2>
+        <div class="sidebar">
+          <ul>
+            <li><a href="/index.html" class="nav-item">Home</a></li>
+            <li><a href="/pages/border-radius.html">Border-Radius</a></li>
+            <li>
+              <a href="/pages/boxShadow.html" class="nav-item">Box-Shadow</a>
+            </li>
+            <li>
+              <a href="/pages/text-size.html" class="nav-item">Text-Size</a>
+            </li>
+            <li>
+              <a href="/pages/gradient.html" class="nav-item">Gradient</a>
+            </li>
+            <li id="c">
+              <a href="/pages/cursor.html" class="nav-item">CSS-Cursor</a>
+            </li>
+            <li>
+              <a href="/pages/transform.html" class="nav-item">Transform</a>
+            </li>
+            <li><a href="/pages/filter.html" class="nav-item">Filter</a></li>
+            <li><a href="/pages/border.html" class="nav-item">Border</a></li>
+            <li>
+              <a href="/pages/rgba.html" class="nav-item">RGBA & Hex Color</a>
+            </li>
+            <li id="m">
+              <a href="/pages/columns.html" class="nav-item"
+                >Multiple Columns</a
+              >
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <main class="main-content">
+      <div class="main-container">
+        <div class="control-panel">
+          <h3>Arrendondar os Cantos com Border Radius</h3>
+          <div>
+            <label for="radiusRange">Arredondamento:</label>
+            <input type="range" id="radiusRange" min="0" max="100" value="0" />
+            <span id="singleRadiusValue">0px</span>
+          </div>
+          <div>
+            <label for="topLeft">Canto Superior Esquerdo:</label>
+            <input type="range" id="topLeft" min="0" max="100" value="0" />
+            <span id="topLeftValue">0px</span>
+
+            <label for="topRight">Canto Superior Direito:</label>
+            <input type="range" id="topRight" min="0" max="100" value="0" />
+            <span id="topRightValue">0px</span>
+
+            <label for="bottomRight">Canto Inferior Direito:</label>
+            <input type="range" id="bottomRight" min="0" max="100" value="0" />
+            <span id="bottomRightValue">0px</span>
+
+            <label for="bottomLeft">Canto Inferior Esquerdo:</label>
+            <input type="range" id="bottomLeft" min="0" max="100" value="0" />
+            <span id="bottomLeftValue">0px</span>
+          </div>
+          <div>
+            <label>
+              <input type="checkbox" id="dragMode" onclick="toggleDragMode()" />
+              Modo Arrastar
+            </label>
+            <button onclick="resetBorderRadius()">Resetar</button>
+          </div>
+        </div>
+
+        <div class="square-container">
+          <div class="quadrado" id="quadrado"></div>
+          <div id="infoText">Border Radius: 0px 0px 0px 0px</div>
+          <button id="copyButton">Copiar CSS</button>
+          <p>
+            O
+            <a
+              href="https://developer.mozilla.org/en-US/docs/Web/CSS/border-radius"
+              target="_blank"
+              >border-radius</a
+            >
+            é uma propriedade CSS que arredonda os cantos de elementos,
+            proporcionando uma estética suave e moderna. Permite definir o raio
+            de arredondamento individualmente para cada canto.
+          </p>
+        </div>
+      </div>
+
+      <section class="tutorials">
+        <h2>Guias e Tutoriais sobre Efeitos CSS</h2>
+        <article>
+          <h3>Como Usar o Border Radius</h3>
+          <p>
+            O <strong>border-radius</strong> pode ser aplicado a qualquer
+            elemento HTML, como <code>div</code>, <code>button</code> ou
+            <code>input</code>. Veja um exemplo básico:
+          </p>
+          <pre><code>
+div {
+  border-radius: 10px;
+}
+          </code></pre>
+          <p>
+            Este código aplica um raio de 10 pixels a todos os cantos de um
+            <code>div</code>. Você pode personalizar o valor para obter
+            diferentes efeitos visuais.
+          </p>
+        </article>
+        <article>
+          <h3>Exemplos Práticos de Border Radius</h3>
+          <p>
+            Aqui estão alguns exemplos de como o <strong>border-radius</strong>
+            pode ser usado:
+          </p>
+          <ul>
+            <li>
+              <strong>Botões:</strong> Botões com cantos arredondados ficam mais
+              modernos.
+            </li>
+            <li>
+              <strong>Caixas de Entrada:</strong> Campos de entrada arredondados
+              proporcionam uma aparência mais suave.
+            </li>
+            <li>
+              <strong>Imagens:</strong> Imagens com bordas arredondadas
+              adicionam um toque elegante.
+            </li>
+          </ul>
+        </article>
+      </section>
+
+      <section class="examples">
+        <h2>Exemplos de Efeitos CSS no Border Radius</h2>
+        <p>
+          Veja como diferentes configurações de
+          <strong>border-radius</strong> podem alterar a aparência dos
+          elementos:
+        </p>
+        <div class="example-container">
+          <div class="example-box" style="border-radius: 0px">Quadrado</div>
+          <div class="example-box" style="border-radius: 20px">
+            Cantos Arredondados
+          </div>
+          <div class="example-box" style="border-radius: 50%">Círculo</div>
+        </div>
+      </section>
+    </main>
+
+    <script src="/script/BorderRadius.js"></script>
+  </body>
+</html>

@@ -1,117 +1,176 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>
-      Gerador de Efeitos CSS - Border Radius, Sombra e Cor | Ferramenta para
-      Desenvolvedores Web
-    </title>
+    <title>CSS Effects Generator - Interactive Border Radius & Box Shadow Tool</title>
 
-    <!-- Meta Description e Keywords para SEO -->
+    <!-- Meta Description and Keywords for SEO -->
     <meta
       name="description"
-      content="Utilize o Gerador de Efeitos CSS para criar e visualizar efeitos como border-radius, box-shadow e cores de forma interativa. Ferramenta essencial para desenvolvedores web aprimorarem seus designs CSS."
+      content="Discover the ultimate CSS Effects Generator for creating and previewing border-radius, box-shadow, gradients, and more. Perfect for web developers looking to enhance CSS designs interactively."
     />
     <meta
       name="keywords"
-      content="border-radius, box-shadow, efeitos CSS, gerador de CSS, design web, ferramenta CSS, desenvolvedor web, CSS interativo"
+      content="CSS effects generator, border-radius, box-shadow, gradients, web design, CSS tools, interactive design, web development"
     />
     <meta name="author" content="Fernando Terra" />
 
-    <!-- URL Canônica para evitar duplicação -->
+    <!-- Canonical URL -->
     <link rel="canonical" href="https://geradorderadius.site/" />
 
-    <!-- Links alternativos para SEO em várias línguas -->
-    <link
-      rel="alternate"
-      href="https://geradorderadius.site/en"
-      hreflang="en"
-    />
-    <link
-      rel="alternate"
-      href="https://geradorderadius.site/pt-BR"
-      hreflang="pt-BR"
-    />
-    <link
-      rel="alternate"
-      href="https://geradorderadius.site/es"
-      hreflang="es"
-    />
-    <link
-      rel="alternate"
-      href="https://geradorderadius.site/fr"
-      hreflang="fr"
-    />
-    <link
-      rel="alternate"
-      href="https://geradorderadius.site/de"
-      hreflang="de"
-    />
-
-    <!-- Open Graph para compartilhamento em redes sociais -->
+    <!-- Open Graph Meta Tags -->
     <meta
       property="og:title"
-      content="Gerador de Efeitos CSS - Ferramenta para Desenvolvedores"
+      content="CSS Effects Generator - Interactive Design Tool"
     />
     <meta
       property="og:description"
-      content="Crie e visualize efeitos CSS como border-radius e box-shadow com nossa ferramenta interativa e prática para desenvolvedores web."
+      content="Create and visualize CSS effects like border-radius and box-shadow with our powerful tool. A must-have for web developers!"
     />
-    <meta property="og:image" content="/images/og-image.png" />
+    <meta
+      property="og:image"
+      content="https://geradorderadius.site/images/og-image.png"
+    />
+    <meta property="og:image:alt" content="Preview of CSS effects generator" />
     <meta property="og:url" content="https://geradorderadius.site/" />
     <meta property="og:type" content="website" />
 
-    <!-- Twitter Card para compartilhamento -->
+    <!-- Twitter Card Meta Tags -->
     <meta name="twitter:card" content="summary_large_image" />
     <meta
       name="twitter:title"
-      content="Gerador de Efeitos CSS - Ferramenta para Desenvolvedores"
+      content="CSS Effects Generator - Interactive Tool"
     />
     <meta
       name="twitter:description"
-      content="Crie e visualize efeitos CSS como border-radius e box-shadow com nossa ferramenta interativa e prática para desenvolvedores web."
+      content="Experiment with CSS effects like border-radius and box-shadow using our dynamic tool."
     />
-    <meta name="twitter:image" content="/images/twitter-image.png" />
+    <meta
+      name="twitter:image"
+      content="https://geradorderadius.site/images/twitter-image.png"
+    />
+    <meta
+      name="twitter:image:alt"
+      content="Interactive CSS effects generator in action"
+    />
 
-    <link rel="stylesheet" href="/css/index.css" />
+    <!-- Schema.org JSON-LD -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "SoftwareApplication",
+        "name": "CSS Effects Generator",
+        "url": "https://geradorderadius.site/",
+        "description": "An interactive tool for web developers to create CSS effects such as border-radius and box-shadow.",
+        "applicationCategory": "Web Application",
+        "author": {
+          "@type": "Person",
+          "name": "Fernando Terra"
+        },
+        "operatingSystem": "All",
+        "offers": {
+          "@type": "Offer",
+          "price": "0.00",
+          "priceCurrency": "USD"
+        }
+      }
+    </script>
+
+    <!-- Favicons -->
     <link rel="icon" href="images/favicon.png" type="image/x-icon" />
+    <link rel="apple-touch-icon" href="images/favicon.png" />
+
+    <!-- CSS Stylesheet -->
+    <link rel="stylesheet" href="/css/index.css" />
   </head>
   <body>
     <header>
-      <h1>Gerador de Efeitos CSS</h1>
+      <h1>CSS Effects Generator</h1>
       <nav class="section-container">
-        <h2>Navegação</h2>
+        <h2>Site Navigation</h2>
         <div class="sidebar">
           <ul>
-            <li><a href="/index.html" class="nav-item">Home</a></li>
             <li>
-              <a href="/pages/border-radius.html" class="nav-item"
+              <a href="/index.html" class="nav-item" title="Go to Home">Home</a>
+            </li>
+            <li>
+              <a
+                href="/pages/border-radius.html"
+                class="nav-item"
+                title="Explore border-radius examples"
                 >Border-Radius</a
               >
             </li>
             <li>
-              <a href="/pages/boxShadow.html" class="nav-item">Box-Shadow</a>
+              <a
+                href="/pages/boxShadow.html"
+                class="nav-item"
+                title="Learn about box-shadow"
+                >Box-Shadow</a
+              >
             </li>
             <li>
-              <a href="/pages/text-size.html" class="nav-item">Text-Size</a>
+              <a
+                href="/pages/text-size.html"
+                class="nav-item"
+                title="Adjust text size"
+                >Text-Size</a
+              >
             </li>
             <li>
-              <a href="/pages/gradient.html" class="nav-item">Gradient</a>
+              <a
+                href="/pages/gradient.html"
+                class="nav-item"
+                title="Create gradients"
+                >Gradient</a
+              >
             </li>
             <li>
-              <a href="/pages/cursor.html" class="nav-item">CSS-Cursor</a>
+              <a
+                href="/pages/cursor.html"
+                class="nav-item"
+                title="Experiment with cursor styles"
+                >CSS-Cursor</a
+              >
             </li>
             <li>
-              <a href="/pages/transform.html" class="nav-item">Transform</a>
+              <a
+                href="/pages/transform.html"
+                class="nav-item"
+                title="Apply transformations"
+                >Transform</a
+              >
             </li>
-            <li><a href="/pages/filter.html" class="nav-item">Filter</a></li>
-            <li><a href="/pages/border.html" class="nav-item">Border</a></li>
             <li>
-              <a href="/pages/rgba.html" class="nav-item">RGBA & Hex Color</a>
+              <a
+                href="/pages/filter.html"
+                class="nav-item"
+                title="Explore CSS filters"
+                >Filter</a
+              >
             </li>
             <li>
-              <a href="/pages/columns.html" class="nav-item"
+              <a
+                href="/pages/border.html"
+                class="nav-item"
+                title="Design borders"
+                >Border</a
+              >
+            </li>
+            <li>
+              <a
+                href="/pages/rgba.html"
+                class="nav-item"
+                title="Work with colors"
+                >RGBA & Hex Color</a
+              >
+            </li>
+            <li>
+              <a
+                href="/pages/columns.html"
+                class="nav-item"
+                title="Experiment with columns"
                 >Multiple Columns</a
               >
             </li>
@@ -122,40 +181,28 @@
 
     <main>
       <section>
-        <h2>Sobre o Gerador de Efeitos CSS</h2>
+        <h2>About the CSS Effects Generator</h2>
         <p>
-          O Gerador de Efeitos CSS é uma ferramenta inovadora para
-          desenvolvedores web explorarem e aplicarem efeitos CSS de maneira
-          prática e interativa. Com ele, você pode experimentar propriedades
-          como <strong>border-radius</strong>, <strong>box-shadow</strong> e
-          <strong>gradientes</strong>, visualizando mudanças em tempo real e
-          adaptando designs facilmente.
+          The CSS Effects Generator is a powerful tool designed for web developers to experiment with CSS properties like <strong>border-radius</strong>, <strong>box-shadow</strong>, and <strong>gradients</strong>. Visualize changes in real-time and adapt your designs effortlessly.
         </p>
       </section>
 
       <section>
-        <h2>Informações Legais</h2>
+        <h2>Legal Information</h2>
         <p>
-          &copy; 2024 Gerador de Efeitos CSS todos os direitos reservados. Este
-          site está sujeito aos
-          <a href="/pages/termosuso.html" aria-label="Termos de uso"
-            >termos de uso</a
-          >
-          e à
-          <a href="/pages/politicas.html" aria-label="Política de privacidade"
-            >política de privacidade</a
-          >.
+          &copy; 2024 CSS Effects Generator. All rights reserved. This site is subject to the
+          <a href="/pages/termosuso.html" aria-label="Terms of Use">terms of use</a>
+          and the
+          <a href="/pages/politicas.html" aria-label="Privacy Policy">privacy policy</a>.
         </p>
         <p>
-          <a href="https://www.facebook.com/profile.php?id=61568322650659"
-            >Contato</a
-          >
+          <a href="https://www.facebook.com/profile.php?id=61568322650659" title="Contact us">Contact</a>
         </p>
       </section>
     </main>
 
     <script>
-      // Destaca a seção ativa ao carregar a página
+      // Highlight the active section on page load
       const currentPath = window.location.pathname;
       document.querySelectorAll(".nav-item").forEach((link) => {
         if (link.getAttribute("href") === currentPath) {
